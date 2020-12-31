@@ -8,8 +8,8 @@
 <p>No meu caso, programando em flutter, já utilizei plugins novos que eram feitos pela comunidade e que sofriam alterações rápido. Em um caso precisei atualizar a versão do plugin para receber uma correção de erro e nessa atualização os nomes das classes mudaram e os métodos passaram a ser estáticos, fazendo com que eu tivesse que modificar em todo o canto do código onde eu as usasse. Já em um caso dois, encontrei um plugin que funcionava melhor do que o que eu usava, então precisei substituir todo o código de um pelo outro. Em ambos os casos, se esses imports estivessem presos a um adapter X e eu usasse esse adapter no meu código, teria que fazer a atualização apenas em um lugar.</p>
  
 <h4>Código</h4>
-<h5>A classe de exibição é a nossa função externa que queremos usar no programa(adaptée). Ela recebe um mapa de pessoa para exibir, porém o tipo de mapa que ela recebe tem o nome completo. Nosso programa faz a solicitação para que ela exiba um mapa onde está separado nome e sobrenome(cliente). Esse cliente solicita a exibição a um TARGET, uma classe abstrata que possui um filho ADAPTER, que é quem irá transformar um tipo de mapa no outro. Existe duas formas desse ADAPTER comunicar-se com a classe ADAPTEE, elas são:</h5>
-<ol>
+<p>A classe de exibição é a nossa função externa que queremos usar no programa(adaptée). Ela recebe um mapa de pessoa para exibir, porém o tipo de mapa que ela recebe tem o nome completo. Nosso programa faz a solicitação para que ela exiba um mapa onde está separado nome e sobrenome(cliente). Esse cliente solicita a exibição a um TARGET, uma classe abstrata que possui um filho ADAPTER, que é quem irá transformar um tipo de mapa no outro. Existe duas formas desse ADAPTER comunicar-se com a classe ADAPTEE, elas são:</p>
+<ul>
 <li>por objeto: Herdamos o Target e usamos o Adaptee por composição.</li>
 <li>por classe: Herdamos o Target e implementamos o Adaptee.</li>
-</ol>
+</ul>
